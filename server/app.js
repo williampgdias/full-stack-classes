@@ -1,6 +1,7 @@
 var path = require("path");
 var express = require("express");
 var app = express();
+const {USER} = require("./DataBase/Model")
 
 // ------------------------------------------------------
 // MiddleWares                                  (STEP 1/3)
@@ -18,15 +19,12 @@ app.use(express.urlencoded({extended: true, limit: '2mb'}));
 // Routes                                       (STEP 2/3)
 // ------------------------------------------------------
 
-// (1): it is not API endpoint, it is just a simple route
+// (1) 
 app.get("/", function(req, res){
- 
-    var my = path.resolve(__dirname + "/static/index.html")
-    // console.log(my);
-    res.sendFile(my)
-
+    res.sendFile(path.resolve(__dirname + "/static/index.html"))
 });
 
+ 
 // (2): my first API (RestAPI)
 app.post("/api/person", function (req, res) {
 
@@ -41,6 +39,13 @@ app.post("/api/person", function (req, res) {
 
 })
 
+// (3)
+app.get("/users", async function(req, res){
+
+    var all_users = await USER.findAll({});
+    res.json(all_users);
+
+});
 
 // ------------------------------------------------------
 // Start Running the Server on port 3000        (STEP 3/3)
