@@ -1,0 +1,20 @@
+
+
+body {
+    background-color: brown;
+}
+
+#mySecondForm {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    background: #000;
+}
+
+h2 {
+    color: #fff;
+}
+
+div {
+    color: #fff;
+}
