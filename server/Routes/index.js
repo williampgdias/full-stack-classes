@@ -7,8 +7,8 @@ const Controller = require("../Controllers");
 // All Routes
 // -----------------------------------------------------
 router.get("/", Controller.Home); 
-router.post("/api/person", Controller.ReadUser); 
-router.get("/users", Controller.AddUser);
+router.post("/api/person", Controller.AddUser); 
+router.get("/users", Controller.ReadUser);
 
 // -----------------------------------------------------
 // export

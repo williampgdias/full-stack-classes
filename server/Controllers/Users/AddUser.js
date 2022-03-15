@@ -1,12 +1,24 @@
 
 const {USER} = require("../../DataBase/Model")
 
-
 //
-async function AddUser(req, res){
+async function AddUser(req, res) {
 
-    var all_users = await USER.findAll({});
-    res.json(all_users);
+    // step (1) get data 
+    var user = req.body
+
+    // step (2) person => databse  
+    await USER.create({
+        id: await USER.max("id", {}) + 1,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        mobile: user.mobile,
+        roleID: 2
+    });
+
+    // step (3) send response from here (server) to frontend 
+    res.json("User Added Successfully!")    
 
 }
 
