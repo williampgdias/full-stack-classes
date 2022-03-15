@@ -1,59 +1,19 @@
-var path = require("path");
 var express = require("express");
 var app = express();
-const {USER} = require("./DataBase/Model")
 
 // ------------------------------------------------------
-// MiddleWares                                  (STEP 1/3)
-// ------------------------------------------------------
-
-// (1): to get data in the APIs endpoints
-app.use(express.json())
-app.use(express.static("server/static"))
-
-// (2): load static files like html, css and scripts(js)
-app.use(express.urlencoded({extended: true, limit: '2mb'}));
-
+// (STEP 1/3) MiddleWares                                  
+// ------------------------------------------------------ 
+app.use(express.json()); 
+app.use(express.urlencoded({extended: true, limit: '2mb'})); 
+app.use(express.static("server/static"));
 
 // ------------------------------------------------------
-// Routes                                       (STEP 2/3)
+// (STEP 2/3) Routes                                       
 // ------------------------------------------------------
-
-// (1) 
-app.get("/", function(req, res){
-    res.sendFile(path.resolve(__dirname + "/static/index.html"))
-});
-
- 
-// (2): my first API (RestAPI)
-app.post("/api/person", async function (req, res) {
-
-    // (1) get data 
-    var user = req.body
-
-    // (2) person => databse  
-    await USER.create({
-        id: await USER.max("id", {}) + 1,
-        name: user.name,
-        roleID: 1
-    });
-
-    // (3) send response from server (here)
-    res.json("Received successfully!")    
-
-})
-
-// (3)
-app.get("/users", async function(req, res){
-
-    var all_users = await USER.findAll({});
-    res.json(all_users);
-
-});
+app.use(require("./Routes"));
 
 // ------------------------------------------------------
-// Start Running the Server on port 3000        (STEP 3/3)
+// (STEP 3/3) Start the Server on port 3000        
 // ------------------------------------------------------
-
-// step 3
 app.listen(3000);
