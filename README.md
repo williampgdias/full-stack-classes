@@ -1,4 +1,4 @@
-# fullstack tutorial (version: v1.2)
+# Full Stack tutorial (version: v1.2)
 2022-March-15
  
 
