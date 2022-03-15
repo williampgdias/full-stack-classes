@@ -26,13 +26,17 @@ app.get("/", function(req, res){
 
  
 // (2): my first API (RestAPI)
-app.post("/api/person", function (req, res) {
+app.post("/api/person", async function (req, res) {
 
     // (1) get data 
-    var person = req.body
+    var user = req.body
 
-    // (2) process data (like storing in database)
-    console.log(person);
+    // (2) person => databse  
+    await USER.create({
+        id: await USER.max("id", {}) + 1,
+        name: user.name,
+        roleID: 1
+    });
 
     // (3) send response from server (here)
     res.json("Received successfully!")    

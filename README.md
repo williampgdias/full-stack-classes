@@ -1,44 +1,10 @@
-# Docs
-2022-04 
+# fullstack tutorial (version: v1.1)
+2022-March-14
 
-## db
+## in this branch (v1.1)
 
-* db: williamdatabase
-* user: william
-* pass: william
+* [x] Connect Node.js to postgreSQL using `sequelize`
+* [x] Read data from database
+* [x] Insert data to database
 
-## Ajax Request 
 
-### jQuery Ajax
-
-```js
-$.ajax({
-
-    url: "http://localhost:3000/api/person",
-    method: "post",
-    data: person1
-
-}).done(function (responseFromServer) {
-
-    // just log the response from server
-    console.log("Server Response: ", responseFromServer);
-
-}).fail(e => console.log("error: ", e));
-
-```
-
-### Pure js Ajax
-
-```js
-var http = new XMLHttpRequest();  
-http.open('POST', "http://localhost:3000/api/person", true); 
-http.setRequestHeader('Content-type', 'application/json;charset=UTF-8');
-
-http.onreadystatechange = function() { 
-    if(http.readyState == 4 && http.status == 200) {
-        console.log(http.responseText);
-    }
-}
-
-http.send(JSON.stringify(person1));
-```
