@@ -4,6 +4,11 @@
 
 ## in this branch (v1.2)
 
+* [x] using `module.exports = `
+* [x] using `express.Router()` 
+
+### Clean Code, Human Readable Code
+
 After we leave the project, 
 other developers work on the project
 to make our codes understandable for them, 
@@ -18,5 +23,3 @@ we make our codes clear by:
 * Name folders a meaningful name that make sense for human. 
 
 
-* [ ] using `module.exports = `
-* [ ] using `express.Router()` 
