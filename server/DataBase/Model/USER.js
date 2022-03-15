@@ -8,7 +8,10 @@ const USER = sequelize.define("User", {
     type: Sequelize.INTEGER, 
     primaryKey: true
   },
-  name: {type: Sequelize.STRING}
+  firstName: {type: Sequelize.STRING},
+  lastName: {type: Sequelize.STRING},
+  email: {type: Sequelize.STRING},
+  mobile: {type: Sequelize.STRING}
 },{
   timestamps: false
 });

@@ -8,7 +8,7 @@ const ROLE = sequelize.define("Role", {
     primaryKey: true,
     autoIncrement: true
   }, 
-  title: {type: Sequelize.STRING}
+  roleTitle: {type: Sequelize.STRING}
 },{
   timestamps: false
 });

@@ -6,7 +6,7 @@ form.addEventListener("submit", function(e) {
 
     // second step
     const person1 = {
-        name: e.target[0].value,
+        firstName: e.target[0].value,
         lastName: e.target[1].value,
         email: e.target[2].value,
         mobile: e.target[3].value,
