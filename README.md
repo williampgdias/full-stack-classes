@@ -4,7 +4,15 @@
 
 ## in this branch (v1.2)
 
-* [x] using `module.exports = `
+* [ ] Software Architecture
+    * [x] MVC (Model-View-Controller)
+    * [ ] Micro (Micro Services)
+* [x] Connect to postgreSQL
+* [x] Read data from Database
+* [x] Add data to Database
+* [x] Modular Programming
+    * [x] export by `module.exports = ` 
+    * [x] import by `require()`  
 * [x] using `express.Router()` 
 
 ### Clean Code, Human Readable Code
