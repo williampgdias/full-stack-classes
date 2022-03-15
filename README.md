@@ -1,10 +1,22 @@
 # fullstack tutorial (version: v1.1)
-2022-March-14
+2022-March-15
+ 
 
-## in this branch (v1.1)
+## in this branch (v1.2)
 
-* [x] Connect Node.js to postgreSQL using `sequelize`
-* [x] Read data from database
-* [x] Insert data to database
+After we leave the project, 
+other developers work on the project
+to make our codes understandable for them, 
+we make our codes clear by:
+
+* Leave some comments
+* Leave some space between 
+* Don't code too much lines in a single sheet
+* Follow `modular programming` and make partition in separate sheets.
+* Organize your `folder structure` 
+* Prevent nesting folders into each other too much!
+* Name folders a meaningful name that make sense for human. 
 
 
+* [ ] using `module.exports = `
+* [ ] using `express.Router()` 
