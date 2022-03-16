@@ -1,14 +1,14 @@
 var express = require("express")
 var router = express.Router()
-const Controller = require("../Controllers");
+const {Home, AddUser, ReadUser} = require("../Controllers");
 
 
 // -----------------------------------------------------
 // All Routes
 // -----------------------------------------------------
-router.get("/", Controller.Home); 
-router.post("/api/person", Controller.AddUser); 
-router.get("/users", Controller.ReadUser);
+router.get("/", Home); 
+router.post("/api/person", AddUser); 
+router.get("/users", ReadUser);
 
 // -----------------------------------------------------
 // export
