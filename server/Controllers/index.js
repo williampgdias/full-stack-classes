@@ -1,6 +1,3 @@
-
-
-//
 var Controller = {
     Home: require("./Home"),
     AddUser: require("./Users/AddUser"),
@@ -9,3 +6,4 @@ var Controller = {
 
 // export 
 module.exports = Controller
+

@@ -19,7 +19,6 @@ const USER = sequelize.define("User", {
 //
 USER.belongsTo(ROLE, {foreignKey: "roleID"})  
 
-
 //
 module.exports = USER
   

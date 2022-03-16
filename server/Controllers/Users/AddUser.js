@@ -1,4 +1,3 @@
-
 const {USER} = require("../../DataBase/Model")
 
 //
@@ -17,11 +16,10 @@ async function AddUser(req, res) {
         roleID: 2
     });
 
-    // step (3) send response from here (server) to frontend 
+    // step (3) 
     res.json("User Added Successfully!")    
 
 }
-
 
 // 
 module.exports = AddUser

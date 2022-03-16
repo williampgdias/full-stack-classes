@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
- 
-
+  
 // 'postgres://user:pass@localhost:5432/db'
 const url = 'postgres://william:William@localhost:5432/william-database'; 
 const sequelize = new Sequelize(url, {logging: false});
@@ -16,10 +15,7 @@ async function Connect() {
 } 
 
 //
-Connect();
-
-//
-
+Connect(); 
 
 //
 module.exports = sequelize    
