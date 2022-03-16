@@ -2,18 +2,12 @@ var express = require("express")
 var router = express.Router() 
 
 
-
 // -----------------------------------------------------
 // Functions
 // -----------------------------------------------------
-function Function1(request, response){
-    response.send("<h1> Hello World from Route (1) </h1>")
-}
-
-function Function2(request, response){
-    response.send("<h1> Hello World from Route (2) </h1>")
-}
-
+var Functions = require("../Functions/index.js")
+var Function1 = Functions.Function1
+var Function2 = Functions.Function2
 
 // -----------------------------------------------------
 // All Routes
