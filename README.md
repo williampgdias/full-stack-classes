@@ -22,31 +22,39 @@ v1.0 = version 1.0
     <tr>
         <td style="color: lightgray">March-19</td>
         <td>v1.1.1</td>
-        <td>relocate all routes in Routes/index.js</td>
+        <td>relocate all routes to Routes/index.js</td>
     </tr>
     <tr>
         <td style="color: lightgray">March-20</td>
         <td>v1.1.2</td>
-        <td>Define Function1 and Function2 out of router</td>
+        <td>Define Function1 & Function2 </td>
     </tr>
     <tr>
         <td style="color: lightgray">March-21</td>
         <td>v1.1.3</td>
-        <td>relocate Function1 and Function2 to Functions folder</td>
+        <td>relocate Function1 & Function2 to Functions folder</td>
     </tr>
     <tr>
         <td style="color: lightgray">March-22</td>
-        <td>v1.1</td>
-        <td>same as branch v1.1.3</td>
+        <td style="color: lightgray">v1.1</td>
+        <td style="color: lightgray">same as branch v1.1.3</td>
     </tr>
     <tr>
         <td style="color: lightgray">March-23</td>
         <td>v1.2</td>
-        <td>rename Functions folder to Controllers</td>
+        <td>
+            v1.0 & v1.1 Together
+            <ol style="font-size: 10px">
+                <li>from v1.0 bring Database folder </li> 
+                <li>from v1.1 bring Functions folder </li>
+                <li>rename Functions folder to Controllers</li>
+                <li>change Controllers folder content</li>
+            </ol>
+        </td>
     </tr>
     <tr>
         <td style="color: lightgray">March-24</td>
-        <td>master</td>
-        <td>Docs about Branches</td>
+        <td style="color: lightgray">master</td>
+        <td style="color: lightgray">Docs about Branches</td>
     </tr>
 </table>
