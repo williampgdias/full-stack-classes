@@ -1,33 +1,34 @@
 # Full Stack tutorial (version: v1.2)
 2022-March-15
+  
  
+<div style="display: flex; ">
+    <div style="width: 30%;">
+        <img src="README/0.jpg" width="100%">
+    </div>
+    <div style="width: 30%;">
+        <img src="README/1.jpg" width="100%">
+    </div>
+    <div style="width: 30%;">
+        <img src="README/2.jpg" width="100%">
+    </div>
+</div>
+
+Small images? go to `README` folder to see larger
 
 ## in this branch (v1.2)
+  
+* using `postgres://Username:Password@localhost:5432/databaseName`
+* using `USER.findAll()` 
+* using `USER.create()` 
+* using `module.exports = ` 
+* using `require()`  
+* using `express.Router()` 
 
-* [ ] Software Architecture
-    * [x] MVC (Model-View-Controller)
-    * [ ] Micro (Micro Services)
-* [x] Connect to postgreSQL
-* [x] Read data from Database
-* [x] Add data to Database
-* [x] Modular Programming
-    * [x] export by `module.exports = ` 
-    * [x] import by `require()`  
-* [x] using `express.Router()` 
+### Clean Code
 
-### Clean Code, Human Readable Code
+Let developers understand your codes easily by:
 
-After we leave the project, 
-other developers work on the project
-to make our codes understandable for them, 
-we make our codes clear by:
-
-* Leave some comments
-* Leave some space between 
-* Don't code too much lines in a single sheet
-* Follow `modular programming` and make partition in separate sheets.
-* Organize your `folder structure` 
-* Prevent nesting folders into each other too much!
-* Name folders a meaningful name that make sense for human. 
-
+* Leave some comments and space between codes
+* Prevent code too much lines in a single sheet
 
