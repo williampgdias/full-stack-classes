@@ -10,6 +10,11 @@ v1.0 = version 1.0
         <td>Description</td>
     </tr>
     <tr>
+        <td style="color: lightgray">March-12</td>
+        <td>v0.9</td>
+        <td>html css - get data from a form</td>
+    </tr>
+    <tr>
         <td style="color: lightgray">March-13</td>
         <td>v1.0</td>
         <td>only app.js and DataBase</td>
@@ -62,3 +67,10 @@ v1.0 = version 1.0
 ## img folder 
 
 take a look at `img folder` architecture!
+
+
+![](img/3.jpg)
+
+![](img/0.jpg)
+![](img/1.jpg)
+![](img/2.jpg)
