@@ -1,6 +1,6 @@
-# FullStack (v1.0)
+# FullStack (v0.9)
 
 
-## in this branch (v1.0)
+## in this branch (v0.9)
 
-get data from form
+* get data from form
