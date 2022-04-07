@@ -5,11 +5,6 @@
     /* part1: basic styles */
     background-color: lightgray;
     height: 500px;
-    width: 400px;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 20px;
-    
 
     /* part2: flex */
     display: flex;
@@ -21,15 +16,4 @@
 div {
     margin-left: 10px;
     padding: 5px;
-}
-
-.form input {
-    width: 100%;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-input #text {
-    padding-left: 10px;
 }
