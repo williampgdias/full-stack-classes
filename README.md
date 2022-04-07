@@ -58,3 +58,7 @@ v1.0 = version 1.0
         <td style="color: lightgray">Docs about Branches</td>
     </tr>
 </table>
+
+## img folder 
+
+take a look at `img folder` architecture!
